@@ -25,11 +25,12 @@ public class Main {
     // 2. reverseInteger
     public static String reverseInteger(int a){
         String aAsString = String.valueOf(a);
-        StringBuilder finalString = new StringBuilder();
-        for(int i = 0; i< aAsString.length(); i++){
-            finalString.append(aAsString.length() - i);
+        String finalString = "";
+//        StringBuilder finalString = new StringBuilder();
+        for(int i = 0; i < aAsString.length(); i++){
+            finalString = finalString + (aAsString.charAt(aAsString.length() - i-1));
         }
-        return finalString.toString();
+        return finalString;
     }
 
 
